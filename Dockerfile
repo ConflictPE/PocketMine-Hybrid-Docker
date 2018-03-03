@@ -10,7 +10,7 @@ RUN groupadd -r pocketmine && useradd -r -g pocketmine pocketmine
 RUN \
  apt-get update \
  && apt-get install -y --no-install-recommends \
- apt-transport-https ca-certificates curl software-properties-common git unzip --no-install-recommends \
+ apt-transport-https ca-certificates curl software-properties-common git unzip g++ \
  && rm -rf /var/lib/apt/lists/*
 
 # Now we setup PocketMine
